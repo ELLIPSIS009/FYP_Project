@@ -1,9 +1,9 @@
 """Flexible Page."""
 from django.db import models
 
-from wagtail.admin.edit_handlers import FieldPanel
-from wagtail.core.models import Page
-from wagtail.core.fields import StreamField
+from wagtail.admin.panels import FieldPanel
+from wagtail.models import Page
+from wagtail.fields import StreamField
 
 from streams import blocks
 
