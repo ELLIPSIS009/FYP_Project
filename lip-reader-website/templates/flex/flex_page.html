@@ -1,23 +1,90 @@
 {% extends "base.html" %}
 
+{% block title %}
+  About Us
+{% endblock %}
+
 {% load wagtailcore_tags %}
 
 {% block content %}
-<br>
-<center><h1></h1></center>
 
-  <div>
-      {{ self.subtitle }}
+  <div class="container p-0" style="margin-top: 100px">
+
+    <h1 class="mb-5 text-center"> About Us </h1>
+
+    <p>
+      We are MBA Tech Computers (2019-24) students from Mukesh Patel School of Technology Management & Engineering, NMIMS, Mumbai. 
+    </p> 
+    <p>
+      We are a group of passionate individuals who are committed to achieving excellence in our work. We believe in working together towards a common goal and utilizing our unique skills and strengths to create something truly amazing.
+    </p>
+    <p>
+      We are constantly challenging ourselves to innovate and push the boundaries of what is possible. We believe in continuous learning and development, both individually and as a team. We are dedicated to delivering exceptional results and exceeding our clients' expectations.
+    </p>
+    <p>
+      At the heart of our team is a shared passion for making a positive impact on the world. Whether it's through our work, our volunteer efforts, or our personal lives, we are committed to making a difference. We believe that by working together, we can achieve great things and leave a lasting legacy.
+    </p>
+
+    <div class="d-flex my-5">
+
+      <div class="card shadow-sm p-3 mx-2 mb-5 bg-white rounded" style="width: 18rem;">
+        <img class="card-img-top" src="https://media.licdn.com/dms/image/D5603AQHWZnO1ZruGLw/profile-displayphoto-shrink_800_800/0/1673274300672?e=1684368000&v=beta&t=e36VbDTEMH6HU8WyhNetKngyRDLPTUe1PVc8X4hsWwQ" alt="Card image cap">
+        <div class="card-body px-2 pb-0">
+          <h5 class="card-title">Ritika Chand</h5>
+          <p class="card-text">A Cybersecurity and Machine Learning enthusiast finding her way through the world.</p>
+          <a href="https://www.linkedin.com/in/ritika-chand/" class="d-flex align-items-center justify-content-center mt-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg>
+            &nbsp; Ritika Chand
+          </a>
+        </div>
+      </div>
+      <div class="card shadow-sm p-3 mx-2 mb-5 bg-white rounded" style="width: 18rem;">
+        <img class="card-img-top" src="https://media.licdn.com/dms/image/C4D03AQH5qjHbX81UJg/profile-displayphoto-shrink_800_800/0/1658759721018?e=1684368000&v=beta&t=mE4kK52GcA6nO59_UhAc_KWR6vz_nCoUja5wRZrwDAg" alt="Card image cap">
+        <div class="card-body px-2 pb-0">
+          <h5 class="card-title">Abhinav Mathur</h5>
+          <p class="card-text">A passionate Deep Learning & Cybersecurity researcher from the pink city</p>
+          <a href="https://www.linkedin.com/in/abhinav-mathur-b472571b6/" class="d-flex align-items-center justify-content-center mt-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg>
+            &nbsp; Abhinav Mathur
+          </a>
+        </div>
+      </div>
+      <div class="card shadow-sm p-3 mx-2 mb-5 bg-white rounded" style="width: 18rem;">
+        <img class="card-img-top" src="https://media.licdn.com/dms/image/D5603AQFzvGwdKa4o3w/profile-displayphoto-shrink_800_800/0/1665502951981?e=1684368000&v=beta&t=EB7fY_76Wb6FroCgTgSMROjFGUSw6E9FVcIRgnyBe4Y" alt="Card image cap">
+        <div class="card-body px-2 pb-0">
+          <h5 class="card-title">Pushpit Jain</h5>
+          {% comment %} <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> {% endcomment %}
+          <p class="card-text">A statistics and ML researcher interested in the world of finance.</p>
+          <a href="https://www.linkedin.com/in/pushpit-jain/" class="d-flex align-items-center justify-content-center mt-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg>
+            &nbsp; Pushpit Jain
+          </a>
+        </div>
+      </div>
+      <div class="card shadow-sm p-3 mx-2 mb-5 bg-white rounded" style="width: 18rem;">
+        <img class="card-img-top" src="https://media.licdn.com/dms/image/C4D03AQGuzYHzLZjQpg/profile-displayphoto-shrink_800_800/0/1660909023373?e=1684368000&v=beta&t=StVrfp_9MIiLG8auAd1vDV7RG6Mkoo0r9FGDm3qaE_o" alt="Card image cap">
+        <div class="card-body px-2 pb-0">
+          <h5 class="card-title">Shiwansh Raj</h5>
+          <p class="card-text">An MBA and engineer by profession, a consultant by passion.</p>
+          <a href="https://www.linkedin.com/in/shiwanshraj/" class="d-flex align-items-center justify-content-center mt-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg>
+            &nbsp; Shiwansh Raj
+          </a>
+        </div>
+      </div>
+
+      
+      </div>
+    </div>
+
   </div>
-
-<div class="container">
-<br><br>
-
-  {% for block in page.content %}
-
-    {% include_block block %}
-    <br>
-  {% endfor %}
-</div>
 
 {% endblock %}
