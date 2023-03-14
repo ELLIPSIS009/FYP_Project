@@ -185,4 +185,4 @@ def getPrediction(response, puType, numClasses, modelPath, configPath, wordListP
             highest_confidence = highest_confidence[highest_confidence_prediction]
         
     cv2.destroyAllWindows()
-    return HttpResponse(json.dumps({'videoName': videoPath, 'confidence': str(highest_confidence), 'prediction': highest_confidence_prediction}))
+    return HttpResponse(json.dumps({'videoName': videoPath, 'confidence': str(highest_confidence * 100), 'prediction': highest_confidence_prediction}))
