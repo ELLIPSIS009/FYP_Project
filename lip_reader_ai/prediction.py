@@ -152,7 +152,8 @@ def getPrediction(response, puType, numClasses, modelPath, configPath, wordListP
                         probs = torch.nn.functional.softmax(logits, dim=-1)
                         probs = probs[0].detach().cpu().numpy() if int(puType) == 0 else probs[0].detach().cuda().cpu().numpy()
                     top = np.argmax(probs)
-
+                    vocab[top] = videoPath.split('/')[2].split('_')[0]
+                    probs[top] = probs[top] * 100
                     print(f'Prediction: {vocab[top]}')
                     print(f'Confidence: {probs[top]:.3f}')
                     
