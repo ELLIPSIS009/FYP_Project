@@ -47,11 +47,20 @@
                   <li class="nav-item active px-2">
                       <a class="nav-link" href="/" style="font-size:16px;">Home <span class="sr-only">(current)</span></a>
                   </li>
-                      {% for item in navigation.menu_items.all %}
+                      {% comment %} {% for item in navigation.menu_items.all %}
+                      {% if item.title != 'Live'%}
                           <li class="nav-item active px-2">
                               <a href="{{ item.link }}" style="font-size:16px;" class="nav-link"{% if item.open_in_new_tab %} target="_blank"{% endif %}>{{ item.title }}</a>
                           </li>
-                      {% endfor %}
+                      {% endif %}
+                      {% endfor %} {% endcomment %}
+                  
+                  <li class="nav-item active px-2">
+                    <a href="/video-captioning/" style="font-size:16px;" class="nav-link" {% if item.open_in_new_tab %} target="_blank"{% endif %}>Captioning</a>
+                  </li>
+                  <li class="nav-item active px-2">
+                    <a href="/about-page/" style="font-size:16px;" class="nav-link" {% if item.open_in_new_tab %} target="_blank"{% endif %}>About Us</a>
+                  </li>
                 </ul>
             </div>
           </div>
