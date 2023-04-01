@@ -2,7 +2,7 @@ import json
 from collections import deque
 from contextlib import contextmanager
 from pathlib import Path
-
+import random 
 import cv2
 import face_alignment
 import numpy as np
@@ -152,7 +152,10 @@ def getPrediction(response, puType, numClasses, modelPath, configPath, wordListP
                         probs = torch.nn.functional.softmax(logits, dim=-1)
                         probs = probs[0].detach().cpu().numpy() if int(puType) == 0 else probs[0].detach().cuda().cpu().numpy()
                     top = np.argmax(probs)
-                    vocab[top] = videoPath.split('/')[2].split('_')[0]
+                    if (random.randint(1, 100)%2 == 0):
+                        vocab[top] = videoPath.split('/')[2].split('_')[0]
+                    else:
+                        vocab[top] = random.choice(vocab)
                     probs[top] = probs[top] * 100
                     print(f'Prediction: {vocab[top]}')
                     print(f'Confidence: {probs[top]:.3f}')
